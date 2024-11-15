@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zsoldics Balazs CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="introductionJS.js" defer></script>
+</head>
+<body>
+    <!-- SIDEBAR  -->
+    <nav id="sidebar">
+        <ul>
+            <li class="image">
+                <img class="img" src="resources/ashton-bingham-EQFtEzJGERg-unsplash.jpg" alt="">
+                <button id="toggle-btn" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+                
+            </li>
+            <li class="sidebar-link active">
+                <a href="#" data-target="about-me-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li class="sidebar-link">
+                <a href="#" data-target="work-exp-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
+                    <span>Work Experience</span>
+                </a>
+            </li>
+            <li class="sidebar-link">
+                <a href="#" data-target="education-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/></svg>
+                    <span>Education</span>
+                </a>
+            </li>
+            <li class="sidebar-link">
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z"/></svg>
+                    <span>Projects</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                
+                <ul class="sub-menu">
+                    <div>
+                        <li class="sidebar-link"><a href="#" data-target="html-container">HTML&CSS</a></li>
+                        <li class="sidebar-link"><a href="#" data-target="projects-container">JAVA SCRIPT</a></li>
+                        <li class="sidebar-link"><a href="#" data-target="projects-container">JAVA</a></li>
+                    </div>
+                    
+                </ul>
+            </li>
+            <li class="sidebar-link">
+                <a href="#" data-target="contact-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/></svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- CONTAINERS -->
+    <main >
+        <div class="container active-c" id="about-me-container">
+            <h1>Greetings visitor,</h1>
+            <h2>My name is Zsoldics Balazs</h2>
+            <p>Highly motivated and passionate Computer Science student in final year, eager to apply and expand my tehnical skills in a collaborative and i
+                nnovative environment.</p>
+            <p>
+                Involved in a two-year university grade Postgraduate Training Programme in Computer Science at Babeş-Bolyai University in Cluj-Napoca ,
+                 interest in transitioning towards a new career path. 
+                </p>
+                <div class="cards">
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="soft-skills">
+                        <h2>Soft Skills</h2>
+                        <ul>
+                            <li>Effective Communication</li>
+                            <li>Ability to Work in a Team</li>
+                            <li>Ability to work under Pressure</li>
+                            <li>Time management</li>
+                            <li>Fast learner</li>
+                            <li>Ability to multitask</li>
+                            <li>Critical Thinking</li>
+                         </ul>
+                    </div>
+                    <div class="languages">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Romanian</li>
+                            <li>Hungarian</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+                </div>
+            <p>With a strong passion for technology and a desire to expand my skill set,
+                 I am eager to immerse myself in a dynamic learning environment where I can acquirehands-on experience in HTML/CSS, JS and JAVA development 
+                 and to be a part of a team. Throughout my academic and professional journey, I have alwaysbeen fascinated by the power of programming 
+                 languages. 
+                 I firmly believethat acquiring experience other programming language will not only enhance my technical capabilities but also
+                  open up exciting career prospects in software development and technology-driven industries.
+            </p>
+
+        </div>
+
+        <div class="container" id="work-exp-container">
+            <h2>Work Experience</h2>
+            <div class="cards work-exp">
+                <div>
+                    <h2>Spitalul Clinic Judetean De Urgenta Cluj-Napoca - CT EMERGENCY DEPARTMENT</h2>
+                    <span>2016 - PRESENT</span> <span> -> Tehnicinan de radiologie si imagistica</span>
+                    <p>
+                        In the fast-paced environment of the emergency department serving as a radiogapher specializing in CT scans presented a range of unique challenges and opportunities for growth. From managing an influx of patients with urgent medical needs to collaborating closely with multidisciplinary teams.
+                    </p>
+                    <p>
+                        Communicating effectively with distressed or uncooperative patients and ensuring their comfort and safety during the imaging process posed significant challenges.
+                    </p>
+                    <p>
+                        Despite these obstacles, my tenure in the emergency department as a CT radiographer was marked
+                        by seberal notable accomplishments. Succesfully delivering high-quality CT images within tight
+                        timeframes, especially in critical or life threatening situations, was immenseley rewarding.
+                        Contributing to the timely diagnosis and treatment of patients with conditions ranging from trauma
+                        to acute illnesses underscored the vital role of imaging in emergency care.
+                    </p>
+                </div>
+            </div>
+            <div class="cards work-exp">
+                <div>
+                    <h2>Medisprof SRL</h2>
+                    <span>2019 - 2024</span> <span> -> Tehnicinan de radiologie si imagistica</span>
+                    <p>Over the past five years, I have dedicated my expertise to
+                        conducting CT and MRI procedures on a part-time basis at a
+                        private oncology clinic.</p>
+                        <p>
+                            At Medisprof, my journey into the realm of MRI examinations was
+                            challenging. As I embarked on this learning path, I encountered
+                            challenges, from mastering the operation of sophisticated
+                            equipment to understanding the nuances of patient care in this
+                            specialized setting. Each step presented its own set of
+                            complexities, requiring not only technical proficiency but also
+                            adaptability and problem-solving skills.
+                        </p>
+                        <p>
+                            I found myself immersed in a dynamic environment where every
+                            obstacle became an opportunity for growth. Whether grappling
+                            with image acquisition techniques or refining my ability to
+                            communicate effectively with patients undergoing MRI scans, I
+                            remained committed to overcoming each challenge with
+                            diligence and perseverance.
+                        </p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="container" id="education-container">
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat totam voluptatum, sequi voluptas quae ullam excepturi iure recusandae aut sit quasi, unde distinctio non harum, amet explicabo nostrum. Porro esse provident ad qui laboriosam explicabo sint inventore dolore doloremque animi cumque voluptates natus voluptatem delectus iusto magnam quasi nesciunt pariatur quibusdam, quis fuga doloribus voluptate excepturi. Numquam adipisci voluptatem quod asperiores debitis odit a, quaerat possimus itaque similique assumenda quas quae, eius velit eos corporis? Similique assumenda provident, ut, debitis delectus nostrum earum reprehenderit voluptas incidunt voluptatibus obcaecati, dolore vel! Et labore itaque saepe, blanditiis voluptas nulla explicabo perspiciatis aliquid asperiores rem at ad! Voluptate impedit, quas nemo voluptatum voluptates hic dolorem laudantium minima? Mollitia illum pariatur quidem, commodi repellat quia est facilis unde quod vel? Similique, non vel! Commodi alias animi quidem eum iste ex at, error aperiam recusandae neque odio dolores quasi provident! Doloremque sint quos sequi quod animi ad debitis temporibus similique odit hic. Delectus tenetur error iure unde quos dolores ad voluptates inventore magni velit dolorem dolore excepturi, culpa beatae quasi quidem, necessitatibus odio accusamus obcaecati qui quia in iusto. Assumenda, voluptatibus laborum. Nobis repellendus necessitatibus, neque dignissimos eos deleniti culpa iure sequi quod numquam.</p>
+        </div>
+
+        <div class="container" id="projects-container">
+            <h2>projects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus a, reiciendis sunt, sed deserunt, provident fugit sapiente illum odio exercitationem inventore similique quam aperiam nemo totam. Minus deserunt dolorem tempora dolor voluptate? Debitis aliquam totam vel quaerat voluptatem, esse laudantium tempora ullam labore illum autem in saepe veritatis doloribus non pariatur quasi officia porro magnam reprehenderit vero temporibus nemo! Nemo quod ipsam sit dolorum veritatis, fuga harum corporis eius quo impedit nulla ipsa! Dignissimos fugiat tempora molestias assumenda qui quasi deserunt, fuga in excepturi quos quod esse cupiditate rerum modi quam eius soluta quo nemo voluptatibus dicta error! Consequatur corporis alias quisquam tempora laborum cumque! Modi atque ex fuga aut debitis labore consectetur distinctio, nemo fugiat! Dignissimos non facere nostrum corporis beatae nulla qui aspernatur fuga, vero saepe voluptatibus! Voluptates amet molestiae quo doloribus veritatis ipsa illum incidunt in magni dolor rerum eligendi, tempora reprehenderit saepe tempore labore fugiat, perspiciatis enim voluptatem repellat sint velit repudiandae porro maiores. Cupiditate alias fugiat aut iusto molestias inventore veritatis qui quisquam fugit. Assumenda unde voluptate odio iste culpa dolore similique hic laboriosam sunt harum! Tenetur quas, consequatur quam, officiis quo, iusto nam architecto praesentium cum voluptates vitae exercitationem corporis enim perferendis laboriosam eaque at modi fugiat dolores provident sint perspiciatis. Voluptates ut distinctio, iure praesentium, obcaecati labore sit dolor ratione reprehenderit tempora numquam at inventore vitae. Quidem quos, quibusdam odio excepturi placeat natus eum itaque soluta illo suscipit sapiente, eveniet ut ea repellendus asperiores, voluptatibus perspiciatis. Nesciunt, autem! Distinctio eveniet quos enim, cupiditate officia iure non aliquid mollitia corrupti at, perferendis cum! Minus quae commodi praesentium, quod ipsa consequatur tempore sequi illum maxime, dolores doloribus fuga minima fugiat odio voluptatum! Tempora cumque soluta in debitis neque nisi pariatur. Quo animi possimus esse quasi aut, sunt, beatae cum quibusdam optio fugiat maiores quis dolor, aperiam quia dolorum aliquid. Eaque molestiae ad aut nulla! Iste amet assumenda architecto recusandae expedita fuga sequi, cum dolores tenetur minima eius iure similique laboriosam sapiente quia omnis nemo quas nisi. Velit cum dignissimos illo est pariatur vero. Consectetur molestiae rem recusandae maiores eum laborum nihil tempore illum id libero blanditiis at iure, doloribus consequatur, consequuntur ipsum ex sunt tenetur commodi velit dolorem dolorum quisquam? Assumenda quos totam nihil aliquam impedit enim labore animi, reiciendis magni inventore adipisci sit atque modi voluptatum libero laborum dolore possimus sint, molestias consectetur dicta hic laudantium natus? Magnam velit delectus autem dolore nulla error, laudantium sequi, corrupti dolorem est placeat! Quas possimus ut, odit dolorum cum consequatur quis velit doloribus! Fugit repudiandae, officiis quae esse dignissimos accusamus reiciendis ut ipsum consectetur eos illum similique corrupti cumque id quia, fuga modi enim totam quasi praesentium dolores dolore? Maxime corporis ea quae dolor tempora facilis veritatis ducimus accusamus officia, dignissimos consectetur deleniti non alias, blanditiis ipsum incidunt quia vitae sequi repudiandae ex optio laboriosam. Laudantium quisquam ratione recusandae facilis nulla sequi omnis maiores, porro dolore earum alias blanditiis consequatur eveniet praesentium animi aut natus eaque cumque, accusamus accusantium odit aperiam. Doloribus temporibus veniam veritatis. Odit!</p>
+        </div>
+
+        <div class="container" id="html-container">
+            <div >
+                <h2>HTML </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat totam voluptatum, sequi voluptas quae ullam excepturi iure recusandae aut sit quasi, unde distinctio non harum, amet explicabo nostrum. Porro esse provident ad qui laboriosam explicabo sint inventore dolore doloremque animi cumque voluptates natus voluptatem delectus iusto magnam quasi nesciunt pariatur quibusdam, quis fuga doloribus voluptate excepturi. Numquam adipisci voluptatem quod asperiores debitis odit a, quaerat possimus itaque similique assumenda quas quae, eius velit eos corporis? Similique assumenda provident, ut, debitis delectus nostrum earum reprehenderit voluptas incidunt voluptatibus obcaecati, dolore vel! Et labore itaque saepe, blanditiis voluptas nulla explicabo perspiciatis aliquid asperiores rem at ad! Voluptate impedit, quas nemo voluptatum voluptates hic dolorem laudantium minima? Mollitia illum pariatur quidem, commodi repellat quia est facilis unde quod vel? Similique, non vel! Commodi alias animi quidem eum iste ex at, error aperiam recusandae neque odio dolores quasi provident! Doloremque sint quos sequi quod animi ad debitis temporibus similique odit hic. Delectus tenetur error iure unde quos dolores ad voluptates inventore magni velit dolorem dolore excepturi, culpa beatae quasi quidem, necessitatibus odio accusamus obcaecati qui quia in iusto. Assumenda, voluptatibus laborum. Nobis repellendus necessitatibus, neque dignissimos eos deleniti culpa iure sequi quod numquam.</p>
+            </div>
+      </div>
+
+        </div>
+        
+        <div class="container " id="contact-container">
+            <h2>Contact</h2>
+            <h3>Email</h3>
+            <h3>Location</h3>
+            <h3>Telephone</h3>
+        </div>
+        
+    </main>
+   
+    
+</body>
+</html>
