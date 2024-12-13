@@ -104,18 +104,17 @@ main div{
     display: block;
     border-radius: 50%;
     margin-left: 30px;
-    
 }
 
 
 .greting-pic .image{
   width: 300px;
-  height: 350px;
+  height: auto;
   float: right;
   border-radius: 5%;
-}
-.greting-pic a{
-  margin-left: 0px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
 }
 
 
@@ -206,7 +205,7 @@ main div{
 
 /* =========================== CONTAINER ================== */
 
-   
+
 
 .container {
     position: relative;
@@ -239,13 +238,14 @@ main div{
   
 }
 
+#education-container h2{
+  font-size: 2em;
+}
+
 .active-c{
     display: block;
  }
 
-
-
- 
 
  .footer div{
     margin-bottom: 0;
