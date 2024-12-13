@@ -99,12 +99,27 @@ main div{
 .img {
     width: 100px;
     height: 100px;
-    border-radius: 30px;
+    object-fit: cov;
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
     margin-left: 30px;
     
 }
 
-#sidebar a, #sidebar .dropdown-btn, #sidebar .img{
+
+.greting-pic .image{
+  width: 300px;
+  height: 350px;
+  float: right;
+  border-radius: 5%;
+}
+.greting-pic a{
+  margin-left: 0px;
+}
+
+
+#sidebar a, #sidebar .dropdown-btn{
     border-radius: .5em;
     padding: 1em;
     color: var(--text-clr);
@@ -210,7 +225,7 @@ main div{
     }
     h2{
         margin-top: 20px;
-        padding-left: 3em;
+        padding-left: 1em;
         font-size: 3em;
     }
     p{
