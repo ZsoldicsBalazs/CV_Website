@@ -41,7 +41,7 @@ document.querySelectorAll('#sidebar a').forEach(link => {
         });
         // Obține ID-ul containerului țintă din atributul data-target
         const targetId = this.getAttribute('data-target');
-
+          console.log(targetId);
         document.querySelectorAll(".sidebar-link").forEach(element=> element.classList.remove('active'));
 
         link.parentElement.classList.add('active');
